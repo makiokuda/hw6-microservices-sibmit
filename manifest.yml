@@ -6,20 +6,20 @@ env:
   CF_TARGET: https://api.run.haas-76.pez.pivotal.io
 applications:
 - name: config-server
-  host: config-server-commerceAppMakiOkuda
+  host: config-server-commerceApp-MakiOkuda
   path: ./commerce-config-server/target/commerce-config-server-0.0.1-SNAPSHOT.jar
 - name: eureka
-  host: eureka-commerceAppMakiOkuda
+  host: eureka-commerceApp-MakiOkuda
   path: ./commerce-eureka/target/commerce-eureka-0.0.1-SNAPSHOT.jar
 - name: hystrix-dashboard
-  host: hystrix-dashboard-commerceAppMakiOkuda
+  host: hystrix-dashboard-commerceApp-MakiOkuda
   path: ./commerce-hystrix-dashboard/target/commerce-hystrix-dashboard-0.0.1-SNAPSHOT.jar
-- name: item-service-MakiOkuda
-  host: commerce-item-Maki
+- name: item-service_MakiOkuda
+  host: commerce-item-MakiOkuda
   path: ./commerce-item-service/target/commerce-item-service-0.0.1-SNAPSHOT.jar
-- name: price-service-MakiOkuda
-  host: commerce-price-Maki
+- name: price-service_MakiOkuda
+  host: commerce-price-MakiOkuda
   path: ./commerce-price-service/target/commerce-price-service-0.0.1-SNAPSHOT.jar
-- name: commerce-ui-MakiOkuda
-  host: commerce-ui-Maki
+- name: commerce-ui_MakiOkuda
+  host: commerce-ui-MakiOkuda
   path: ./commerce-ui/target/commerce-ui-0.0.1-SNAPSHOT.jar
