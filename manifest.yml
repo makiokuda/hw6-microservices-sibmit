@@ -1,0 +1,25 @@
+---
+memory: 512M
+instances: 1
+buildpack: java_buildpack_offline
+env:
+  CF_TARGET: https://api.run.haas-76.pez.pivotal.io
+applications:
+- name: config-server
+  host: config-server-commerceAppMakiOkuda
+  path: ./commerce-config-server/target/commerce-config-server-0.0.1-SNAPSHOT.jar
+- name: eureka
+  host: eureka-commerceAppMakiOkuda
+  path: ./commerce-eureka/target/commerce-eureka-0.0.1-SNAPSHOT.jar
+- name: hystrix-dashboard
+  host: hystrix-dashboard-commerceAppMakiOkuda
+  path: ./commerce-hystrix-dashboard/target/commerce-hystrix-dashboard-0.0.1-SNAPSHOT.jar
+- name: item-service-MakiOkuda
+  host: commerce-item-Maki
+  path: ./commerce-item-service/target/commerce-item-service-0.0.1-SNAPSHOT.jar
+- name: price-service-MakiOkuda
+  host: commerce-price-Maki
+  path: ./commerce-price-service/target/commerce-price-service-0.0.1-SNAPSHOT.jar
+- name: commerce-ui-MakiOkuda
+  host: commerce-ui-Maki
+  path: ./commerce-ui/target/commerce-ui-0.0.1-SNAPSHOT.jar
